@@ -4,7 +4,7 @@ Joe's Coffee Store website for HTML/CSS/JavaScript practice
 - 2nd practice project
 - Languages/Frameworks used : HTML, CSS
 - Template used : boilerplate 6.1.0  
---
+---
 - Things that I got errors and spent quiet a time to figure out what was wrong :
 1. Text in <p> and some other tags : As font-size increase, margin top, bottom get increased as well as default. So it's important to use below code to prevent unexpected margins.  
 <pre>* {  
