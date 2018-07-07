@@ -1,6 +1,8 @@
 # coffee-store
 Joe's Coffee Store website for HTML/CSS/JavaScript practice
 
+- 2nd practice project
+- Languages/Frameworks used : HTML, CSS
 - Template used : boilerplate 6.1.0
 
 - Things that I got errors and spent quiet a time to figure out what was wrong :
