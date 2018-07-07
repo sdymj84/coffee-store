@@ -14,6 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*
@@ -102,10 +103,12 @@ textarea {
 }
 
 body {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 10px;
 }
+
+/* === Title / Nav style ===================================================== */
 
 #title-bar_logo-container {
     width: 100px;
@@ -119,20 +122,6 @@ body {
 
 .title-bar {
     display: inline-block;
-}
-
-.colored-title {
-    color: #3B2117;
-    font-family: "Baloo Da", cursive;
-    font-size: 20px;
-    margin-top: 40px;
-}
-
-.colored-bar {
-    background-color: #65453F;
-    color: white;
-    font-size: 18px;
-    padding: 5px;
 }
 
 #title-bar_title {
@@ -186,8 +175,30 @@ body {
     border-right: none;
 }
 
+
+/* === colored title and bar ============================================ */
+
+.colored-title {
+    color: #3B2117;
+    font-family: "Baloo Da", cursive;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.colored-bar {
+    background-color: #65453F;
+    color: white;
+    font-family: "Baloo Da", cursive;
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+/* === Main article ===================================================== */
+
 main {
     width: 75%;
+    float: left;
 }
 
 #main-image {
@@ -201,7 +212,7 @@ main {
 #main-article > div {
     float: left;
     width: 46%;
-    height: 350px;
+    height: auto;
     padding: 2%;
 }
 
@@ -213,7 +224,71 @@ main {
     clear: both;
 }
 
+aside {
+    float: right;
+    position: relative;
+    top: 410px;
+    text-align: center;
+    width: 25%;
+}
+aside li {
+    list-style: none;
+}
 
+
+/* === Best seller coffees/accessories ======================================== */
+
+.coffees-product {
+    width: 20%;
+    min-width: 140px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+
+.coffees-product_images {
+    max-width: 70%;
+    height: auto;
+    margin: 5px;
+}
+
+.coffees-product_name {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.coffees-product_name a:link {
+    text-decoration: none;
+    color: #3D261D;
+}
+.coffees-product_name a:visited {
+    text-decoration: none;
+    color: #3D261D;
+}
+.coffees-product_name a:hover {
+    color: black;
+}
+
+.coffees-product_price {
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+}
+
+.coffees-product_cart {
+    margin: 5px;
+    padding: 5px 0 5px 0;
+    background-color: #654741;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* === Footer ===================================================== */
 
 footer {
     background-color: #65453F;
