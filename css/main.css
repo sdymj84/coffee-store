@@ -285,6 +285,15 @@ aside li {
     font-size: 14px;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+}
+
+.coffees-product_cart:hover {
+    background-color: #3B2117;
+}
+.coffees-product_cart:active {
+    top: 1px;
+    left: 1px;
 }
 
 
