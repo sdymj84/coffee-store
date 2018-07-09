@@ -37,7 +37,7 @@ BOTTOM    RIGHT
 
 JavaScript code :
 
-<code>
+<pre>
 let coffeesProductCart = document.getElementsByClassName("coffees-product_cart");
 
 for (let i=0 ; coffeesProductCart.length ; i++) {
@@ -58,7 +58,7 @@ for (let i=0 ; coffeesProductCart.length ; i++) {
         coffeesProductCart[i].style.left = "0";
     });
 }
-</code>
+</pre>
 
 CSS code that does the same thing as above JavaScript :
 <pre>
