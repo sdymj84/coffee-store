@@ -95,11 +95,12 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Index.html and common
    ========================================================================== */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -311,6 +312,104 @@ footer {
     text-align: center;
     margin-top: 70px;
 }
+
+
+/* ==========================================================================
+   Checkout.html
+   ========================================================================== */
+
+
+/* === Check Form ===================================================== */
+
+#checkout_form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#checkout_form .input-container {
+    margin: 20px;
+    width: 100%;
+}
+
+#checkout_form input, select {
+    width: 90%;
+    height: 40px;
+    border: 2px solid #afa5a3;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 1em;
+}
+
+.input-label {
+    display: block;
+    font-weight: bold;
+    margin: 7px;
+}
+
+.input-vertical {
+    vertical-align: top;
+    display: inline-block;
+    width: 42.3%;
+    margin-right: 5%;
+}
+
+.input-vertical-oneline {
+    width: 90%;
+}
+
+.input-vertical input, select {
+    width: 100% !important
+}
+
+.input-caption {
+    display: block;
+    font-size: 0.7em;
+    text-align: right;
+    margin: 0 10px -10px 0;
+}
+
+.star {
+    color: rgb(177, 0, 0);
+    margin-left: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==========================================================================
