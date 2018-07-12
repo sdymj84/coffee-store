@@ -342,54 +342,8 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
-#checkout_form .input-container {
-    margin: 20px;
-    width: 100%;
-}
-
-#checkout_form input, select {
-    width: 90%;
-    height: 40px;
-    border: 2px solid #afa5a3;
-    border-radius: 4px;
-    padding: 6px;
-    font-size: 1em;
-}
-
-#checkout_form input[type="submit"] {
-    background-color: #654741;
-    color: white;
-    font-size: 1.4em;
-    border-radius: 10px;
-    width: 40%;
-}
-
-.input-label {
-    display: block;
-    font-weight: bold;
-    margin: 7px;
-}
-
-.input-vertical {
-    vertical-align: top;
-    display: inline-block;
-    width: 42.3%;
-    margin-right: 5%;
-}
-
-.input-vertical-oneline {
-    width: 90%;
-}
-
-.input-vertical input, select {
-    width: 100% !important
-}
-
-.input-caption {
-    display: block;
-    font-size: 0.7em;
-    text-align: right;
-    margin: 0 10px -10px 0;
+hr {
+    margin: 30px 0;
 }
 
 .star {
@@ -397,12 +351,89 @@ footer {
     margin-left: 6px;
 }
 
+#name-address {
+    width: 80%;
+}
 
+.checkout-field {
+    float: left;
+    height: 45px;
+    margin: 10px 2.5% 10px 2.5%;
+    border: 1px solid #8c8c8c;
+    border-radius: 4px;
+}
 
+.col-2 {
+	width: 13.333%
+}
+.col-3 {
+	width: 20%;
+}
+.col-4 {
+	width: 26.666%
+}
+.col-6 {
+	width: 45%;
+}
 
+#name-address label {
+	font-size: 0.7em;
+    color: #666666;
+    display: block;
+    margin-top: 1px;
+    padding-left: 6px;
+}
 
+#name-address input, select {
+	display: block;
+    width: 90%;
+    border: none;
+    margin: 2px 0 0 5px;
+    font-size: 1.2em;
+}
 
+#name-address input:focus, select:focus {
+    outline: none;
+}
 
+#name-address input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+#name-address select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+#name-address select {
+	height: 24px;
+    -webkit-appearance: none; 
+   	-moz-appearance: none;
+   	appearance: none;
+}
+
+#checkout_form input[type="submit"] {
+    background-color: #654741;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 5px;
+    height: 80%;
+    cursor: pointer;
+    position: relative;
+}
+
+#checkout_form input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+#checkout_form input[type="submit"]:active {
+    top: 1px;
+    left: 1px;
+}
+
+.submit-box {
+    margin-top: 40px;
+    border: none;
+}
 
 
 

@@ -48,77 +48,81 @@
     <main>
       <section id="checkout">
           <header class="colored-title">Checkout</header>
+          <hr>
           <div>
               <form id="checkout_form" action="#" method="POST">
-                  <fieldset>
-                    <div class="input-container">
-                        <label class="input-label" for="first-name">Name<span class="star">*</span></label>
-                        <div class="input-vertical">
-                            <input type="text" name="first-name" required>
-                            <label class="input-caption" for="first-name">First Name</label>
-                        </div>
-                        <div class="input-vertical">
-                            <input type="text" name="last-name" required>
-                            <label class="input-caption" for="last-name">Last Name</label>
-                        </div>
+                  <div id="name-address">
+                    <div class="checkout-field col-4">
+                        <label for="first-name">First name<span class="star">*</span></label>
+                        <input type="text" name="first-name" required>
                     </div>
-                    <div class="input-container">
-                        <label class="input-label" for="email">Email<span class="star">*</span></label>
+                    <div class="checkout-field col-2">
+                        <label for="mi">M.I.</label>
+                        <input type="text" name="mi">
+                    </div>
+                    <div class="checkout-field col-4">
+                        <label for="last-name">Last name<span class="star">*</span></label>
+                        <input type="text" name="last-name" required>
+                    </div>
+                    <div class="checkout-field col-2">
+                        <label for="suffix">Suffix</label>
+                        <select name="suffix">
+                            <option></option>
+                            <option>Jr</option>
+                            <option>Sr</option>
+                        </select>
+                    </div>
+                    
+                    <div class="checkout-field col-6">
+                        <label for="address1">Address 1<span class="star">*</span></label>
+                        <input type="text" name="address1" required>
+                    </div>
+                    <div class="checkout-field col-4">
+                        <label for="address2">Address 2</label>
+                        <input type="text" name="address2">
+                    </div>
+                    <div class="checkout-field col-2">
+                        <label for="unit">Unit/apt.</label>
+                        <input type="text" name="unit">
+                    </div>
+                    
+                    <div class="checkout-field col-6">
+                        <label for="city">City<span class="star">*</span></label>
+                        <input type="text" name="city" required>
+                    </div>
+                    <div class="checkout-field col-2">
+                        <label for="state">State<span class="star">*</span></label>
+                        <select name="state" required>
+                            <option></option>
+                            <option>Kansas</option>
+                            <option>Texas</option>
+                            <option>Missouri</option>
+                            <option>California</option>
+                        </select>
+                    </div>
+                    <div class="checkout-field col-4">
+                        <label for="zipcode">Zip code<span class="star">*</span></label>
+                        <input type="text" name="zipcode" maxlength="5" required>
+                    </div>
+                    
+                    <div class="checkout-field col-3">
+                        <label for="birth">Date of birth<span class="star">*</span></label>
+                        <input type="text" name="birth" placeholder="mm/dd/yyyy" required>
+                    </div>
+                    <div class="checkout-field col-3">
+                        <label for="mother-name">Mother's maiden name</label>
+                        <input type="text" name="mother-name">
+                    </div>
+                    <div class="checkout-field col-6">
+                        <label for="email">Email address<span class="star">*</span></label>
                         <input type="email" name="email" required>
                     </div>
-                    <div class="input-container">
-                        <label class="input-label" for="phone-number">Phone Number</label>
-                        <input type="text" name="phone-number">
+                    <div class="clear-both"></div>
+                    <hr>
+                    <div class="checkout-field col-4 submit-box">
+                        <input id="checkout_form_submit" type="submit" value="Submit" class="colored-title">
                     </div>
-                    <div class="input-container">
-                        <label class="input-label" for="blog">Blog / Web Site</label>
-                        <input type="url" name="blog">
-                    </div>
-                    <div class="input-container checkout_form_address">
-                        <label class="input-label" for="address1">Address<span class="star">*</span></label>
-                        <div class="input-vertical input-vertical-oneline">
-                            <input type="text" name="address1" required>
-                            <label class="input-caption" for="address1">Street Address</label>
-                        </div>
-                    </div>
-                    <div class="input-container checkout_form_address">
-                        <label class="input-label" for="address2"></label>
-                        <div class="input-vertical input-vertical-oneline">
-                            <input type="text" name="address2">
-                            <label class="input-caption" for="address2">Address Line 2</label>
-                        </div>
-                    </div>
-                    <div class="input-container checkout_form_address">
-                        <label class="input-label"></label>
-                        <div class="input-vertical">
-                            <input type="text" name="city" required>
-                            <label class="input-caption" for="city">City</label>
-                        </div>
-                        <div class="input-vertical">
-                            <input type="text" name="state" required>
-                            <label class="input-caption">State / Province / Region</label>
-                        </div>
-                    </div>
-                    <div class="input-container checkout_form_address">
-                        <label class="input-label"></label>
-                        <div class="input-vertical">
-                            <input type="text" name="zipcode" required>
-                            <label class="input-caption" for="zipcode">Postal / Zip Code</label>
-                        </div>
-                        <div class="input-vertical">
-                            <select name="country" required>
-                                <option>USA</option>
-                                <option>United Kingdom</option>
-                                <option>South Korea</option>
-                                <option>China</option>
-                                <option>Canada</option>
-                            </select>
-                            <label class="input-caption" for="country">Country</label>
-                        </div>
-                    </div>
-                  </fieldset>
-                  <div class="input-container">
-                    <input id="checkout_form_submit" type="submit" value="Submit" class="colored-title">
+                    
                 </div>
               </form>
           </div>
