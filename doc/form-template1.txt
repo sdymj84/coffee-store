@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+#name-address {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+.checkout-field {
+    float: left;
+    height: 43px;
+    margin: 10px 2.5% 10px 2.5%;
+    border: 1px solid #8c8c8c;
+    border-radius: 4px;
+}
+.col-2 {
+	width: 13.333%
+}
+.col-3 {
+	width: 20%;
+}
+.col-4 {
+	width: 26.666%
+}
+.col-6 {
+	width: 45%;
+}
+#name-address label {
+	font-size: 0.7em;
+    color: #666666;
+    display: block;
+    margin-top: 1px;
+    padding-left: 6px;
+}
+#name-address input, select {
+	display: block;
+    width: 90%;
+    border: none;
+    margin: 2px 0 0 5px;
+    font-size: 1.2em;
+    
+}
+#name-address select {
+	height: 24px;
+    -webkit-appearance: none; 
+   	-moz-appearance: none;
+   	appearance: none;
+}
+#name-address input[type="date"] {
+	
+}
+
+</style>
+</head>
+<body>
+<div id="name-address">
+	<div class="checkout-field col-4">
+    	<label for="first-name">First name</label>
+		<input type="text" name="first-name">
+    </div>
+    <div class="checkout-field col-2">
+    	<label for="mi">M.I.</label>
+		<input type="text" name="mi">
+    </div>
+    <div class="checkout-field col-4">
+    	<label for="last-name">Last name</label>
+		<input type="text" name="last-name">
+    </div>
+    <div class="checkout-field col-2">
+    	<label for="suffix">Suffix</label>
+        <select name="suffix">
+        	<option></option>
+            <option>Jr</option>
+            <option>Sr</option>
+        </select>
+    </div>
+    
+    <div class="checkout-field col-6">
+    	<label for="address1">Address 1</label>
+		<input type="text" name="address1">
+    </div>
+    <div class="checkout-field col-4">
+    	<label for="address2">Address 2</label>
+        <input type="text" name="address2">
+    </div>
+    <div class="checkout-field col-2">
+    	<label for="unit">Unit/apt.</label>
+        <input type="text" name="unit">
+    </div>
+    
+    <div class="checkout-field col-6">
+    	<label for="city">City</label>
+        <input type="text" name="city">
+    </div>
+    <div class="checkout-field col-2">
+    	<label for="state">State</label>
+        <select name="state">
+        	<option></option>
+            <option>Kansas</option>
+            <option>Texas</option>
+            <option>Missouri</option>
+            <option>California</option>
+        </select>
+    </div>
+    <div class="checkout-field col-4">
+    	<label for="zipcode">Zip code</label>
+        <input type="text" name="zipcode" maxlength="5">
+    </div>
+    
+    <div class="checkout-field col-3">
+    	<label for="birth">Date of birth</label>
+        <input type="date" name="birth">
+    </div>
+    <div class="checkout-field col-3">
+    	<label for="mother-name">Mother's maiden name</label>
+        <input type="text" name="mother-name">
+    </div>
+    <div class="checkout-field col-6">
+    	<label for="email">Email address</label>
+        <input type="email" name="email">
+    </div>
+    
+</div>
+</body>
+</html>
