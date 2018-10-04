@@ -1,5 +1,5 @@
 # coffee-store
-Joe's Coffee Store website for HTML/CSS/JavaScript practice
+Joe's Coffee Store website for HTML/CSS/JavaScript practice : 
 https://sdymj84.github.io/coffee-store/
 
 - 2nd practice project
